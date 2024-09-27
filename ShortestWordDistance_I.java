@@ -10,6 +10,9 @@ public class ShortestWordDistance_I {
      * To find the distance, we need indices of word1 and word2.
      * and then, we can choose the min diff.
      *
+     * TC: O(N)
+     * SC: O(N)
+     *
      * @param wordsDict
      * @param word1
      * @param word2
