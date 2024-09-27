@@ -14,6 +14,11 @@ public class ShortestDistance_II {
      */
     Map<String, List<Integer>> wordIndexMap;
 
+    /**
+     * TC: O(N)
+     * SC: O(N)
+     * @param wordsDict
+     */
     public ShortestDistance_II(String[] wordsDict) {
         this.wordIndexMap = new HashMap<>();
         for (int i = 0; i < wordsDict.length; i++) {
@@ -23,6 +28,13 @@ public class ShortestDistance_II {
         }
     }
 
+    /**
+     * TC: O(m + n)
+     * SC: O(1)
+     * @param word1
+     * @param word2
+     * @return
+     */
     public int shortest(String word1, String word2) {
         int min = Integer.MAX_VALUE;
         List<Integer> indices1 = wordIndexMap.get(word1);
