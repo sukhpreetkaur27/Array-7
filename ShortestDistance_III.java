@@ -32,12 +32,17 @@ public class ShortestDistance_III {
             for (int index = 0; index < wordsDict.length; index++) {
                 String word = wordsDict[index];
                 if (word.equals(word1)) {
-                    if (index2 == -1) {
-                        index2 = index;
-                    } else {
-                        index1 = index2;
-                        index2 = index;
-                    }
+//                    if (index2 == -1) {
+//                        index2 = index;
+//                    } else {
+//                        index1 = index2;
+//                        index2 = index;
+//                    }
+                    /*
+                    just swap curr and prev pointers
+                     */
+                    index1 = index2;
+                    index2 = index;
                 }
                 if (index1 > -1) {
                     //  && index2 > -1
